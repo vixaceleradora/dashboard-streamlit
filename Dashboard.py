@@ -193,7 +193,7 @@ else:
                 text='Resultados'
             )
             
-            fig_evolution.update_traces(textposition='inside', textfont=dict(color='white'))
+            fig_evolution.update_traces(textposition='inside', textfont=dict(color='red'))
             
             # Adicionar linha de investimento
             daily_investimento = df_filtered.groupby('Data')['Valor usado'].sum().reset_index().sort_values('Data')
