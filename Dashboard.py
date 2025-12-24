@@ -193,7 +193,7 @@ else:
                 text='Resultados'
             )
             
-            fig_evolution.update_traces(textposition='inside', textfont=dict(color='red'))
+            fig_evolution.update_traces(textposition='inside', textfont=dict(color='white'))
             
             # Adicionar linha de investimento
             daily_investimento = df_filtered.groupby('Data')['Valor usado'].sum().reset_index().sort_values('Data')
@@ -203,7 +203,7 @@ else:
                 mode='lines+markers',
                 name='Investimento',
                 yaxis='y2',
-                line=dict(color='white', width=3)
+                line=dict(color='red', width=3)
             )
             
             # Configurar eixo Y secundário
@@ -242,7 +242,7 @@ else:
                 mode='lines+markers',
                 name='Investimento',
                 yaxis='y2',
-                line=dict(color='white', width=3)
+                line=dict(color='red', width=3)
             )
             
             # Configurar eixo Y secundário
